@@ -74,10 +74,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-
+let testArray = [2, 3, 4];
 
 function sumArray(sumArr) {
-    let testArray = [2, 3, 4];
   let sum1= sum(testArray[0],testArray[1])[0];
   let sum2 = sum(testArray[2],sum1)[0];
   let message = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sum2} is their sum.`;
@@ -105,8 +104,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) {
-}
-
+    let multiy = multiply(testArray[0],testArray[1])[0];
+    let multiy1 =multiply(testArray[2],multiy)[0];
+    let message = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiy1}.`;
+  
+    return[multiy1,message];
+  }
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
